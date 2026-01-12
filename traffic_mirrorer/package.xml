@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>traffic_mirrorer</name>
+  <version>1.0.0</version>
+  <description>The traffic_mirrorer package</description>
+
+  <maintainer email="piotrekbiernacki@gmail.com">Piotr Biernacki</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <export>
+
+  </export>
+</package>

@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="traffic_mirrorer" type="traffic_mirrorer_node" name="traffic_mirrorer_node" />
+</launch>
