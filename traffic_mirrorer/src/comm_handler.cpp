@@ -35,19 +35,30 @@ void CommunicationHandler::proceed()
     io_service.run();
 }
 
+void CommunicationHandler::stop()
+{
+    io_service.stop();
+}
+
 void CommunicationHandler::handleReceive(const boost::system::error_code& error, std::size_t bytes_transferred)
 {
+    if(error)
+    {
+        std::cerr << "Receive error: " << error.message() << '\n';
+        return;
+    }
+
     try
     {
         for(auto &endpoint : endpoints)
         {
             clientSocket.send_to(boost::asio::buffer(rcvBuffer, bytes_transferred), endpoint);
         }
-
-        startReceive();
     }
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
     }
+
+    startReceive();
 }

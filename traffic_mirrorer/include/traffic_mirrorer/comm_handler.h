@@ -28,4 +28,5 @@ public:
     ~CommunicationHandler();
 
     void proceed();
+    void stop();
 };

@@ -10,8 +10,11 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
+  <build_depend>boost</build_depend>
   <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>boost</build_export_depend>
   <exec_depend>roscpp</exec_depend>
+  <exec_depend>boost</exec_depend>
 
   <export>
 

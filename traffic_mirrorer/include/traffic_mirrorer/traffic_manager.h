@@ -16,6 +16,6 @@ public:
     ~TrafficManager();
 
     void addTraffic(Traffic traffic);
-    void startAsync();
     void proceed();
+    void stop();
 };
